@@ -1,3 +1,4 @@
+import Aboutme from "./components/Aboutme";
 import Herosection from "./components/Herosection";
 import Navbar from "./components/Navbar";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Navbar />
       <Herosection />
+      <Aboutme />
     </div>
   );
 }
