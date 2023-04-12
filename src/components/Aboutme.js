@@ -2,7 +2,10 @@ import aboutsvg from "../assets/about.svg";
 
 const Aboutme = () => {
   return (
-    <section className="flex justify-center items-center gap-4 py-8 my-12 w-full bg-[#F8F8F8]">
+    <section
+      id="about-section"
+      className="flex justify-center items-center gap-4 py-8 my-12 w-full bg-[#F8F8F8]"
+    >
       <img
         src={aboutsvg}
         alt="A man developing web applications and softwares"
