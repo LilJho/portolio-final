@@ -32,7 +32,7 @@ const Herosection = () => {
             Puerto Princesa, Palawan.
           </p>
           <ul className="flex gap-2">
-            <li className="w-8 h-8 flex justify-center items-center rounded-full hover:bg-[#1877F2] hover:text-white">
+            <li className="w-8 h-8 flex justify-center items-center rounded-full transition-colors hover:bg-[#1877F2] hover:text-white">
               <a
                 href="https://www.facebook.com/lazyJhonnel"
                 target="_blank"
@@ -72,31 +72,58 @@ const Herosection = () => {
           Tech Stack
         </p>
         <ul className="flex gap-2">
-          <li className="text-[#E34F26] hover:scale-[1.2]" title="HTML">
+          <li
+            className="text-[#E34F26] hover:scale-[1.2] transition-all"
+            title="HTML"
+          >
             <AiFillHtml5 />
           </li>
-          <li className="text-[#1572B6] hover:scale-[1.2]" title="CSS">
+          <li
+            className="text-[#1572B6] hover:scale-[1.2] transition-all"
+            title="CSS"
+          >
             <DiCss3 />
           </li>
-          <li className="text-[#F7DF1E] hover:scale-[1.2]" title="JAVASCRIPT">
+          <li
+            className="text-[#F7DF1E] hover:scale-[1.2] transition-all"
+            title="JAVASCRIPT"
+          >
             <SiJavascript />
           </li>
-          <li className="text-[#61DAFB] hover:scale-[1.2]" title="REACTJS">
+          <li
+            className="text-[#61DAFB] hover:scale-[1.2] transition-all"
+            title="REACTJS"
+          >
             <RiReactjsLine />
           </li>
-          <li className="text-[#000] hover:scale-[1.2]" title="NEXTJS">
+          <li
+            className="text-[#000] hover:scale-[1.2] transition-all"
+            title="NEXTJS"
+          >
             <TbBrandNextjs />
           </li>
-          <li className="text-[#339933] hover:scale-[1.2]" title="NODEJS">
+          <li
+            className="text-[#339933] hover:scale-[1.2] transition-all"
+            title="NODEJS"
+          >
             <FaNodeJs />
           </li>
-          <li className="text-[#000] hover:scale-[1.2]" title="EXPRESSJS">
+          <li
+            className="text-[#000] hover:scale-[1.2] transition-all"
+            title="EXPRESSJS"
+          >
             <SiExpress />
           </li>
-          <li className="text-[#47A248] hover:scale-[1.2]" title="MONGODB">
+          <li
+            className="text-[#47A248] hover:scale-[1.2] transition-all"
+            title="MONGODB"
+          >
             <SiMongodb />
           </li>
-          <li className="text-[#007ACC] hover:scale-[1.2]" title="TYPESCRIPT">
+          <li
+            className="text-[#007ACC] hover:scale-[1.2] transition-all"
+            title="TYPESCRIPT"
+          >
             <SiTypescript />
           </li>
         </ul>

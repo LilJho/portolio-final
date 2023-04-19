@@ -13,9 +13,13 @@ const ProjectCard = ({
   techDataUsed,
   webLink,
   gitLink,
+  index,
 }) => {
   return (
-    <div className="bg-[#F8F8F8] p-4 flex items-center justify-center rounded-2xl gap-4 drop-shadow-lg">
+    <div
+      key={index}
+      className="bg-[#F8F8F8] p-4 flex items-center justify-center rounded-2xl gap-4 drop-shadow-lg"
+    >
       <div className="w-auto h-full transition-transform duration-500 ease-in-out">
         <img
           src={image}
@@ -34,7 +38,10 @@ const ProjectCard = ({
               <p>Tech used:</p>
               <ul className="flex gap-2">
                 {techDataUsed.map((techData, index) => (
-                  <li className={`text-[${techData.color}] hover:scale-[1.2]`}>
+                  <li
+                    key={index}
+                    className={`text-[${techData.color}] transition-all hover:scale-[1.2]`}
+                  >
                     {techData.icon}
                   </li>
                 ))}
@@ -133,9 +140,9 @@ const Projects = () => {
       className="flex flex-col items-center justify-center w-full mt-6"
     >
       <h4 className="font-semibold font-montserrat">Projects I’ve made</h4>
-      <article className="flex flex-col gap-8 my-12">
-        {projectsArr.map((project) => (
-          <ProjectCard {...project} />
+      <article className="flex flex-col gap-8 my-12 ">
+        {projectsArr.map((project, index) => (
+          <ProjectCard {...project} index={index} />
         ))}
       </article>
     </section>

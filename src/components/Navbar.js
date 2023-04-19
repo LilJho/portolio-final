@@ -1,7 +1,13 @@
 import logo from "../assets/logo.svg";
+import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import MyModal from "./modal/Modal";
+import Contact from "./modal/Contact";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  console.log(isOpen);
+
   return (
     <nav className="flex items-center justify-between w-full px-4 py-2">
       <div className="cursor-pointer">
@@ -32,8 +38,19 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
-        <li className="cursor-pointer">Contact</li>
+        <li className="cursor-pointer">
+          <button onClick={() => setIsOpen(true)}>Contact</button>
+        </li>
       </ul>
+      {isOpen && (
+        <MyModal
+          title={"Leave a Message!"}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        >
+          <Contact />
+        </MyModal>
+      )}
     </nav>
   );
 };
