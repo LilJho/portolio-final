@@ -4,7 +4,7 @@ const Aboutme = () => {
   return (
     <section
       id="about-section"
-      className="flex justify-center items-center gap-4 py-8 my-12 w-full bg-[#F8F8F8]"
+      className="flex flex-col md:flex-row justify-center items-center gap-4 py-8 my-12 w-full bg-[#F8F8F8]"
     >
       <img
         src={aboutsvg}

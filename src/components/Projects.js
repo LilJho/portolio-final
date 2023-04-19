@@ -13,13 +13,9 @@ const ProjectCard = ({
   techDataUsed,
   webLink,
   gitLink,
-  index,
 }) => {
   return (
-    <div
-      key={index}
-      className="bg-[#F8F8F8] p-4 flex items-center justify-center rounded-2xl gap-4 drop-shadow-lg"
-    >
+    <div className="bg-[#F8F8F8] p-4 flex flex-col md:flex-row items-center justify-center rounded-2xl gap-4 drop-shadow-lg">
       <div className="w-auto h-full transition-transform duration-500 ease-in-out">
         <img
           src={image}
@@ -27,7 +23,7 @@ const ProjectCard = ({
           className="w-[30rem] h-[15rem] rounded-2xl drop-shadow"
         />
       </div>
-      <div className="max-w-[20rem] min-h-[15rem] font-montserrat font-semibold flex flex-col justify-between">
+      <div className="max-w-[20rem] min-h-[15rem] font-montserrat font-semibold flex flex-col justify-between md:text-left text-center">
         <div>
           <p>{title}</p>
           <span className="text-xs font-poppins text-[#555555] font-normal">
@@ -142,7 +138,7 @@ const Projects = () => {
       <h4 className="font-semibold font-montserrat">Projects I’ve made</h4>
       <article className="flex flex-col gap-8 my-12 ">
         {projectsArr.map((project, index) => (
-          <ProjectCard {...project} index={index} />
+          <ProjectCard {...project} key={index} />
         ))}
       </article>
     </section>

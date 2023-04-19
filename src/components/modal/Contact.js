@@ -15,7 +15,9 @@ const Contact = () => {
         cols="30"
         rows="10"
       ></textarea>
-      <button className="w-full mt-8 text-white bg-green-500">Send</button>
+      <button className="w-full mt-8 text-white bg-green-500 rounded">
+        Send
+      </button>
     </form>
   );
 };

@@ -16,8 +16,8 @@ import { MdWavingHand } from "react-icons/md";
 const Herosection = () => {
   return (
     <main className=" w-full min-h-[calc(100vh-86px)] flex flex-col justify-center items-center">
-      <div className="flex items-center justify-center">
-        <div className="max-w-[20rem] font-montserrat flex flex-col gap-2">
+      <div className="flex flex-col-reverse items-center justify-center md:flex-row">
+        <div className="max-w-[20rem] font-montserrat flex flex-col gap-2 text-center md:text-left">
           <div className="flex text-5xl">
             <h1 className="font-semibold">
               Full-Stack{" "}
@@ -31,7 +31,7 @@ const Herosection = () => {
             Hi, I’m Jhonnel T. Garcia. A passionate Frontent-end Developer from
             Puerto Princesa, Palawan.
           </p>
-          <ul className="flex gap-2">
+          <ul className="flex justify-center gap-2 md:justify-start">
             <li className="w-8 h-8 flex justify-center items-center rounded-full transition-colors hover:bg-[#1877F2] hover:text-white">
               <a
                 href="https://www.facebook.com/lazyJhonnel"
@@ -64,11 +64,11 @@ const Herosection = () => {
         <img
           src={"./my-image.jpg"}
           alt="A young man"
-          className="w-[15rem] h-[15rem] rounded-full object-cover"
+          className="w-[20rem] h-[20rem] md:w-[15rem] md:h-[15rem] rounded-full object-cover"
         />
       </div>
-      <div className="absolute flex items-center justify-center gap-4 text-2xl bottom-4">
-        <p className="pr-2 font-medium border-r-4 border-black font-montserrat">
+      <div className="absolute flex flex-col-reverse items-center justify-center gap-4 text-2xl md:flex-row bottom-4">
+        <p className="pr-2 font-medium border-t-4 border-black md:border-r-4 font-montserrat">
           Tech Stack
         </p>
         <ul className="flex gap-2">
