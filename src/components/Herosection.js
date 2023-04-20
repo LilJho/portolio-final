@@ -15,7 +15,7 @@ import { MdWavingHand } from "react-icons/md";
 
 const Herosection = () => {
   return (
-    <main className=" w-full min-h-[calc(100vh-86px)] flex flex-col justify-center items-center">
+    <main className=" w-full min-h-[calc(100vh-86px)] flex flex-col justify-start md:justify-center items-center">
       <div className="flex flex-col-reverse items-center justify-center md:flex-row">
         <div className="max-w-[20rem] font-montserrat flex flex-col gap-2 text-center md:text-left">
           <div className="flex text-5xl">
