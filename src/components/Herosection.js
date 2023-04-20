@@ -64,7 +64,7 @@ const Herosection = () => {
         <img
           src={"./my-image.jpg"}
           alt="A young man"
-          className="w-[20rem] h-[20rem] md:w-[15rem] md:h-[15rem] rounded-full object-cover"
+          className="w-[15rem] h-[15rem] rounded-full object-cover"
         />
       </div>
       <div className="absolute flex flex-col-reverse items-center justify-center gap-4 text-2xl md:flex-row bottom-4">
