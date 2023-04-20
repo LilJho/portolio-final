@@ -22,7 +22,7 @@ const Navbar = () => {
         </span>
       </div>
       <ul
-        className={`flex flex-col gap-5 md:justify-center md:items-center md:static md:bg-transparent mt-14 md:mt-0 fixed w-full h-screen md:right-0 md:w-[16.5rem] md:h-[5rem] md:gap-4 p-8 text-4xl text-right font-semibold transition-all bg-white border border-black md:border-0 md:min-w-0 md:min-h-0 md:text-xs md:flex-row font-montserrat z-10 ${
+        className={`flex flex-col gap-5 md:justify-center md:items-center md:static md:bg-transparent mt-14 md:mt-0 fixed w-full h-screen md:right-0 md:w-[16.5rem] md:h-[5rem] md:gap-4 p-8 text-4xl text-right font-semibold transition-all bg-white border-2 border-gray-400 md:border-0 md:min-w-0 md:min-h-0 md:text-xs md:flex-row font-montserrat z-10 ${
           toggle ? "right-0" : "right-[-780px]"
         }`}
       >
