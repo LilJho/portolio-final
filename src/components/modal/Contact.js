@@ -4,12 +4,12 @@ const Contact = () => {
   return (
     <form className="flex flex-col items-center justify-center w-full gap-2 mt-4">
       <input
-        className="w-full p-2 bg-white bg-opacity-25 border border-gray-400 rounded shadow-xl backdrop-filter backdrop-blur-lg"
+        className="w-full p-2 bg-white border border-gray-400 rounded"
         type="text"
         placeholder="Your Email"
       />
       <textarea
-        className="w-full p-2 bg-white bg-opacity-25 border border-gray-400 rounded shadow-xl backdrop-filter backdrop-blur-lg"
+        className="w-full p-2 bg-white border border-gray-400 rounded"
         name="message"
         placeholder="Your Message"
         cols="30"

@@ -15,12 +15,12 @@ const ProjectCard = ({
   gitLink,
 }) => {
   return (
-    <div className="bg-[#F8F8F8] p-4 flex flex-col md:flex-row items-center justify-center rounded-2xl gap-4 drop-shadow-lg">
-      <div className="w-auto h-full transition-transform duration-500 ease-in-out">
+    <div className="bg-[#F8F8F8] p-4 flex flex-col lg:flex-row items-center justify-center rounded-2xl gap-4 drop-shadow-lg mx-4">
+      <div className="w-auto h-full transition-transform duration-500 ease-in-out ">
         <img
           src={image}
           alt={title}
-          className="w-[30rem] h-[15rem] rounded-2xl drop-shadow"
+          className="w-[30rem] h-[15rem] rounded-2xl drop-shadow object-cover"
         />
       </div>
       <div className="max-w-[20rem] min-h-[15rem] font-montserrat font-semibold flex flex-col justify-between md:text-left text-center">

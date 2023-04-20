@@ -22,7 +22,7 @@ const Navbar = () => {
         </span>
       </div>
       <ul
-        className={`md:flex md:justify-center md:items-center md:static md:bg-transparent mt-14 md:mt-0 fixed w-full h-screen md:right-0 md:w-[16.5rem] md:h-[5rem] md:gap-4 p-8 text-xl font-semibold transition-all bg-white border border-black md:border-0 md:min-w-0 md:min-h-0 md:text-xs md:flex-row font-montserrat z-10 ${
+        className={`flex flex-col gap-5 md:justify-center md:items-center md:static md:bg-transparent mt-14 md:mt-0 fixed w-full h-screen md:right-0 md:w-[16.5rem] md:h-[5rem] md:gap-4 p-8 text-4xl text-right font-semibold transition-all bg-white border border-black md:border-0 md:min-w-0 md:min-h-0 md:text-xs md:flex-row font-montserrat z-10 ${
           toggle ? "right-0" : "right-[-780px]"
         }`}
       >
@@ -34,11 +34,12 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() =>
+            onClick={() => {
               scroll.scrollTo(
                 document.querySelector("#about-section").offsetTop
-              )
-            }
+              );
+              setToggle(false);
+            }}
           >
             About me
           </Link>
@@ -51,17 +52,25 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() =>
+            onClick={() => {
               scroll.scrollTo(
                 document.querySelector("#projects-section").offsetTop
-              )
-            }
+              );
+              setToggle(false);
+            }}
           >
             Projects
           </Link>
         </li>
         <li className="cursor-pointer">
-          <button onClick={() => setIsOpen(true)}>Contact</button>
+          <button
+            onClick={() => {
+              setIsOpen(true);
+              setToggle(false);
+            }}
+          >
+            Contact
+          </button>
         </li>
       </ul>
       {isOpen && (

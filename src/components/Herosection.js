@@ -68,7 +68,7 @@ const Herosection = () => {
         />
       </div>
       <div className="absolute flex flex-col-reverse items-center justify-center gap-4 text-2xl md:flex-row bottom-4">
-        <p className="pr-2 font-medium border-t-4 border-black md:border-r-4 font-montserrat">
+        <p className="pr-2 font-medium border-t-4 border-black md:border-t-0 md:border-r-4 font-montserrat">
           Tech Stack
         </p>
         <ul className="flex gap-2">
