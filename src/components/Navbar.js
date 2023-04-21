@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col w-full py-2 overflow-hidden md:items-center md:justify-between md:px-4 md:flex-row">
       <div className="flex items-center justify-between min-w-full px-4 cursor-pointer md:px-0 md:min-w-0">
-        <img src={logo} alt="Logo of the web app" />
+        <img src={logo} alt="Logo of the web app" className="w-8 h-8" />
         <span
-          className="transition-all md:hidden"
+          className="text-2xl leading-none transition-all md:hidden"
           onClick={() => setToggle(!toggle)}
         >
           {toggle ? <GrClose /> : <RiMenu3Fill />}

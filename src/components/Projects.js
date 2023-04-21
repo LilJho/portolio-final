@@ -72,6 +72,28 @@ const ProjectCard = ({
 
 const projectsArr = [
   {
+    image: "./itera.png",
+    title: "IT-era website",
+    description:
+      "This is a web-based application that showcases a company and its services. It includes a contact page where users can send an email directly to the company for any questions or inquiries they may have.",
+    techDataUsed: [
+      {
+        icon: <RiReactjsLine />,
+        color: "#61DAFB",
+      },
+      {
+        icon: <TbBrandNextjs />,
+        color: "#000",
+      },
+      {
+        icon: <SiTailwindcss />,
+        color: "#06B6D4",
+      },
+    ],
+    webLink: "https://itera-webapp.vercel.app/",
+    gitLink: "https://github.com/LilJho/itera-webapp",
+  },
+  {
     image: "./farmkonek.png",
     title: "FarmKonek-Profiling Portal",
     description:
@@ -124,8 +146,8 @@ const projectsArr = [
         color: "#47A248",
       },
     ],
-    webLink: "https://profilingportal-fk.vercel.app/",
-    gitLink: "https://github.com/LilJho/profilingportal-fk",
+    webLink: "https://ai-image-generator-one-jade.vercel.app/",
+    gitLink: "https://github.com/LilJho/ai_image_generator",
   },
 ];
 
