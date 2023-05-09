@@ -1,5 +1,13 @@
 import React from "react";
-import { SiTailwindcss, SiOpenai, SiExpress, SiMongodb } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiOpenai,
+  SiExpress,
+  SiMongodb,
+  SiFirebase,
+  SiTypescript,
+  SiPocketbase,
+} from "react-icons/si";
 import { ImNewTab } from "react-icons/im";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -71,6 +79,62 @@ const ProjectCard = ({
 };
 
 const projectsArr = [
+  {
+    image: "./PSU-web.png",
+    title: "Palawan State University OSAS webapp",
+    description:
+      "Our university thesis project is a web application with an AI chatbot that includes fundamental CRUD operations and integrates machine learning techniques.",
+    techDataUsed: [
+      {
+        icon: <RiReactjsLine />,
+        color: "#61DAFB",
+      },
+      {
+        icon: <TbBrandNextjs />,
+        color: "#000",
+      },
+      {
+        icon: <SiTailwindcss />,
+        color: "#06B6D4",
+      },
+      {
+        icon: <SiFirebase />,
+        color: "#FFCA28",
+      },
+    ],
+    webLink: "https://psu-website-thesis.vercel.app/",
+    gitLink: "https://github.com/LilJho",
+  },
+  {
+    image: "./Grachelles.png",
+    title: "Grachelles POS and CRM",
+    description:
+      "Our community project developed a comprehensive system for a multi-branch local store in the food industry, including a POS system for sales and inventory management, and a CRM system for customer relationship management. ",
+    techDataUsed: [
+      {
+        icon: <RiReactjsLine />,
+        color: "#61DAFB",
+      },
+      {
+        icon: <TbBrandNextjs />,
+        color: "#000",
+      },
+      {
+        icon: <SiTailwindcss />,
+        color: "#06B6D4",
+      },
+      {
+        icon: <SiPocketbase />,
+        color: "#FFCA28",
+      },
+      {
+        icon: <SiTypescript />,
+        color: "#007ACC",
+      },
+    ],
+    webLink: "https://grachelles-pos-v2.vercel.app/settings",
+    gitLink: "https://github.com/LilJho",
+  },
   {
     image: "./itera.png",
     title: "IT-era website",
