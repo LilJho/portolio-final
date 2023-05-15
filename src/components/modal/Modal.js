@@ -2,7 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { GrClose } from "react-icons/gr";
 
-export default function MyModal({ title, children, isOpen, setIsOpen }) {
+export default function MyModal({ title, icon, children, isOpen, setIsOpen }) {
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog
@@ -38,7 +38,11 @@ export default function MyModal({ title, children, isOpen, setIsOpen }) {
                   as="h3"
                   className="flex justify-between w-full text-lg font-medium leading-6 text-gray-900"
                 >
-                  {title}
+                  <div className="flex items-center gap-1">
+                    {title}
+                    {icon}
+                  </div>
+
                   <button onClick={() => setIsOpen(false)}>
                     <GrClose />
                   </button>

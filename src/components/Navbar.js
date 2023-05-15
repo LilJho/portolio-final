@@ -5,6 +5,7 @@ import MyModal from "./modal/Modal";
 import Contact from "./modal/Contact";
 import { RiMenu3Fill } from "react-icons/ri";
 import { GrClose } from "react-icons/gr";
+import { MdWavingHand } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,7 +87,8 @@ const Navbar = () => {
       </ul>
       {isOpen && (
         <MyModal
-          title={"Leave a Message!"}
+          title={"Get in touch with me!"}
+          icon={<MdWavingHand className="text-[#FFD869]" />}
           isOpen={isOpen}
           setIsOpen={setIsOpen}
         >

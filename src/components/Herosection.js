@@ -20,7 +20,7 @@ const Herosection = () => {
         <div className="max-w-[20rem] font-montserrat flex flex-col gap-2 text-center md:text-left">
           <div className="flex text-5xl">
             <h1 className="font-semibold">
-              Full-Stack{" "}
+              Frontend{" "}
               <span className="flex gap-1">
                 Developer
                 <MdWavingHand className="text-[#FFD869]" />
