@@ -12,10 +12,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleDownload = () => {
-    const fileUrl = process.env.PUBLIC_URL + "/Resume-Jhonnel-Garcia_4.pdf";
+    const fileUrl = process.env.PUBLIC_URL + "/Resume-Jhonnel-Garcia.pdf";
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "Resume-Jhonnel-Garcia_4.pdf";
+    link.download = "Resume-Jhonnel-Garcia.pdf";
     link.click();
   };
 
@@ -92,7 +92,7 @@ const Navbar = () => {
           isOpen={isOpen}
           setIsOpen={setIsOpen}
         >
-          <Contact />
+          <Contact setIsOpen={setIsOpen} />
         </MyModal>
       )}
     </nav>

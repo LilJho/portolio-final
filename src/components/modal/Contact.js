@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
 
-const Contact = () => {
+const Contact = ({ setIsOpen }) => {
   const [emailDetails, setEmailDetails] = useState({
     name: "",
     email: "",
@@ -11,10 +12,35 @@ const Contact = () => {
     setEmailDetails((prev) => ({ ...prev, [prop]: val }));
   };
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    emailjs.init("CI2-yFumeP2_hcUlG");
+  });
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(emailDetails);
+
+    const serviceID = "default_service";
+    const templateID = "template_72o6ii9";
+
+    const email = {
+      from_name: emailDetails.name,
+      to_name: "Jhonnel",
+      message: emailDetails.msg,
+      from_email: emailDetails.email,
+    };
+
+    await emailjs.send(serviceID, templateID, email).then(
+      () => {
+        alert("Sent!");
+      },
+      (err) => {
+        alert(JSON.stringify(err));
+      }
+    );
+
     setEmailDetails({ name: "", email: "", msg: "" });
+    setIsOpen((prev) => !prev);
   };
 
   return (
@@ -55,6 +81,7 @@ const Contact = () => {
       </div>
 
       <button
+        value
         onClick={handleSubmit}
         className="px-4 py-2 mt-8 ml-auto text-white bg-green-500 rounded"
       >
