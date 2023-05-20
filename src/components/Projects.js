@@ -13,6 +13,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import { FaNodeJs } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const ProjectCard = ({
   image,
@@ -23,7 +24,12 @@ const ProjectCard = ({
   gitLink,
 }) => {
   return (
-    <div className="bg-[#F8F8F8] p-4 flex flex-col lg:flex-row items-center justify-center rounded-2xl gap-4 drop-shadow-lg mx-4">
+    <motion.div
+      className="bg-[#F8F8F8] p-4 flex flex-col lg:flex-row items-center justify-center rounded-2xl gap-4 drop-shadow-lg mx-4"
+      initial={{ scale: 0.5, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ type: "spring", delay: 0.2, duration: 0.7 }}
+    >
       <div className="w-auto h-full transition-transform duration-500 ease-in-out ">
         <img
           src={image}
@@ -74,7 +80,7 @@ const ProjectCard = ({
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
